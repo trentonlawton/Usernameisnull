@@ -99,9 +99,9 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
 <div class="alert">
 
 
-<!-- <span class="failingAlert bar">Failed 1 specs</span> -->
+<!-- <span class="failingAlert bar">Failed 5 specs</span> -->
 <span class="failingAlert bar"><span class="fold-buttons"><a href="#" onclick="fold();">Fold</a> | 
-  <a href="#" onclick="unfold();">Unfold</a></span>1 specs, 1 failed, 0 pending</span>
+  <a href="#" onclick="unfold();">Unfold</a></span>5 specs, 5 failed, 0 pending</span>
 <span class="resultsMenu bar">
 <a class="summaryMenuItem" onclick="showSummary();" href="#">Spec List<a>|<a 
    class="detailsMenuItem" onclick="showFailures();" href="#">Failures</a>
@@ -118,10 +118,36 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
   
   
     <div class="suite failed">
-      <span class="description">For consuming wordpress endpoind</span>
+      <span class="description">For displaying index with photo card components For grabbing all wp post data</span>
     
       <div class="specSummary failed">
-      <span class="description">initial json respsone should return image and date</span>
+      <span class="description">should return jason data for each post</span>
+      </div>
+    
+    </div>
+  
+    <div class="suite failed">
+      <span class="description">For displaying index with photo card components For grabbing first x wp post data and lazy loading x amount with infite scroll</span>
+    
+      <div class="specSummary failed">
+      <span class="description">should return initial x jason data for each post</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">should return x number of post data when the user hits height cap</span>
+      </div>
+    
+    </div>
+  
+    <div class="suite failed">
+      <span class="description">For displaying index with photo card components For tossing wp post data into photocard components</span>
+    
+      <div class="specSummary failed">
+      <span class="description">should have wp posts data from api</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">should take that json response and for each post render a new photo card component to the dom</span>
       </div>
     
     </div>
@@ -133,10 +159,46 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
   
   
   <div class="specDetail failed">
-    <span class="description">For consuming wordpress endpoind initial json respsone should return image and date</span>
+    <span class="description">For displaying index with photo card components For grabbing all wp post data should return jason data for each post</span>
     <div class="stackTrace">
       <div class="resultMessage">Expected 'foo' to equal 'bar'.
-    at Object.&lt;anonymous&gt; (http://localhost:9876/base/src/tests/wordpressdata.spec.js?626fdb9394807b48b72712e218cd6e359fbb0acb:10:15)</div>
+    at Object.&lt;anonymous&gt; (http://localhost:9876/base/src/tests/wordpressdata.spec.js?629eab273490219e66d33f3a1dce8db97dc251d4:11:21)</div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="specDetail failed">
+    <span class="description">For displaying index with photo card components For grabbing first x wp post data and lazy loading x amount with infite scroll should return initial x jason data for each post</span>
+    <div class="stackTrace">
+      <div class="resultMessage">Expected 'foo' to equal 'bar'.
+    at Object.&lt;anonymous&gt; (http://localhost:9876/base/src/tests/wordpressdata.spec.js?629eab273490219e66d33f3a1dce8db97dc251d4:24:23)</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">For displaying index with photo card components For grabbing first x wp post data and lazy loading x amount with infite scroll should return x number of post data when the user hits height cap</span>
+    <div class="stackTrace">
+      <div class="resultMessage">Expected 'foo' to equal 'bar'.
+    at Object.&lt;anonymous&gt; (http://localhost:9876/base/src/tests/wordpressdata.spec.js?629eab273490219e66d33f3a1dce8db97dc251d4:32:23)</div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="specDetail failed">
+    <span class="description">For displaying index with photo card components For tossing wp post data into photocard components should have wp posts data from api</span>
+    <div class="stackTrace">
+      <div class="resultMessage">Expected 'foo' to equal 'bar'.
+    at Object.&lt;anonymous&gt; (http://localhost:9876/base/src/tests/wordpressdata.spec.js?629eab273490219e66d33f3a1dce8db97dc251d4:39:23)</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">For displaying index with photo card components For tossing wp post data into photocard components should take that json response and for each post render a new photo card component to the dom</span>
+    <div class="stackTrace">
+      <div class="resultMessage">Expected 'foo' to equal 'bar'.
+    at Object.&lt;anonymous&gt; (http://localhost:9876/base/src/tests/wordpressdata.spec.js?629eab273490219e66d33f3a1dce8db97dc251d4:43:23)</div>
     </div>
   </div>
   
@@ -152,7 +214,7 @@ document.body.onkeypress = function (e) {
   switch (e.keyCode) {
     case 102: toggleFold(); break;
     case 49: showSummary(); break;
-    case 50: showFailures(); break;
+    case 50: showFailures(); break;case 50: showFailures(); break;case 50: showFailures(); break;
   }
 };
 
