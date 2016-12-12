@@ -94,14 +94,14 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
 </head>
 
 <body id="HTMLReporter" class="html-reporter showDetails">
-<h1>Tested in Chrome 54.0.2840 (Windows 10 0.0.0) on Sat Dec 10 2016</h1>
+<h1>Tested in Chrome 54.0.2840 (Windows 10 0.0.0) on Sun Dec 11 2016</h1>
 
 <div class="alert">
 
 
-<!-- <span class="failingAlert bar">Failed 5 specs</span> -->
+<!-- <span class="failingAlert bar">Failed 7 specs</span> -->
 <span class="failingAlert bar"><span class="fold-buttons"><a href="#" onclick="fold();">Fold</a> | 
-  <a href="#" onclick="unfold();">Unfold</a></span>5 specs, 5 failed, 0 pending</span>
+  <a href="#" onclick="unfold();">Unfold</a></span>8 specs, 7 failed, 0 pending</span>
 <span class="resultsMenu bar">
 <a class="summaryMenuItem" onclick="showSummary();" href="#">Spec List<a>|<a 
    class="detailsMenuItem" onclick="showFailures();" href="#">Failures</a>
@@ -122,6 +122,18 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
     
       <div class="specSummary failed">
       <span class="description">should return jason data for each post</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">should return scaled assets for phone viewport</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">should return scaled assets for tablet viewport</span>
+      </div>
+    
+      <div class="specSummary passed">
+      <span class="description">should return scaled assets for desktop viewport</span>
       </div>
     
     </div>
@@ -162,7 +174,23 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
     <span class="description">For displaying index with photo card components For grabbing all wp post data should return jason data for each post</span>
     <div class="stackTrace">
       <div class="resultMessage">Expected 'foo' to equal 'bar'.
-    at Object.&lt;anonymous&gt; (http://localhost:9876/base/src/tests/wordpressdata.spec.js?629eab273490219e66d33f3a1dce8db97dc251d4:11:21)</div>
+    at Object.&lt;anonymous&gt; (http://localhost:9876/base/src/tests/wordpressdata.spec.js?0ce800e77ea922d1cdadb1da2aef4371a28bf126:51:21)</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">For displaying index with photo card components For grabbing all wp post data should return scaled assets for phone viewport</span>
+    <div class="stackTrace">
+      <div class="resultMessage">Expected 'medium_large' to equal 'large'.
+    at Object.&lt;anonymous&gt; (http://localhost:9876/base/src/tests/wordpressdata.spec.js?0ce800e77ea922d1cdadb1da2aef4371a28bf126:58:30)</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">For displaying index with photo card components For grabbing all wp post data should return scaled assets for tablet viewport</span>
+    <div class="stackTrace">
+      <div class="resultMessage">Expected 'medium_large' to equal 'large'.
+    at Object.&lt;anonymous&gt; (http://localhost:9876/base/src/tests/wordpressdata.spec.js?0ce800e77ea922d1cdadb1da2aef4371a28bf126:67:30)</div>
     </div>
   </div>
   
@@ -172,7 +200,7 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
     <span class="description">For displaying index with photo card components For grabbing first x wp post data and lazy loading x amount with infite scroll should return initial x jason data for each post</span>
     <div class="stackTrace">
       <div class="resultMessage">Expected 'foo' to equal 'bar'.
-    at Object.&lt;anonymous&gt; (http://localhost:9876/base/src/tests/wordpressdata.spec.js?629eab273490219e66d33f3a1dce8db97dc251d4:24:23)</div>
+    at Object.&lt;anonymous&gt; (http://localhost:9876/base/src/tests/wordpressdata.spec.js?0ce800e77ea922d1cdadb1da2aef4371a28bf126:88:23)</div>
     </div>
   </div>
   
@@ -180,7 +208,7 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
     <span class="description">For displaying index with photo card components For grabbing first x wp post data and lazy loading x amount with infite scroll should return x number of post data when the user hits height cap</span>
     <div class="stackTrace">
       <div class="resultMessage">Expected 'foo' to equal 'bar'.
-    at Object.&lt;anonymous&gt; (http://localhost:9876/base/src/tests/wordpressdata.spec.js?629eab273490219e66d33f3a1dce8db97dc251d4:32:23)</div>
+    at Object.&lt;anonymous&gt; (http://localhost:9876/base/src/tests/wordpressdata.spec.js?0ce800e77ea922d1cdadb1da2aef4371a28bf126:96:23)</div>
     </div>
   </div>
   
@@ -190,7 +218,7 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
     <span class="description">For displaying index with photo card components For tossing wp post data into photocard components should have wp posts data from api</span>
     <div class="stackTrace">
       <div class="resultMessage">Expected 'foo' to equal 'bar'.
-    at Object.&lt;anonymous&gt; (http://localhost:9876/base/src/tests/wordpressdata.spec.js?629eab273490219e66d33f3a1dce8db97dc251d4:39:23)</div>
+    at Object.&lt;anonymous&gt; (http://localhost:9876/base/src/tests/wordpressdata.spec.js?0ce800e77ea922d1cdadb1da2aef4371a28bf126:103:23)</div>
     </div>
   </div>
   
@@ -198,7 +226,7 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
     <span class="description">For displaying index with photo card components For tossing wp post data into photocard components should take that json response and for each post render a new photo card component to the dom</span>
     <div class="stackTrace">
       <div class="resultMessage">Expected 'foo' to equal 'bar'.
-    at Object.&lt;anonymous&gt; (http://localhost:9876/base/src/tests/wordpressdata.spec.js?629eab273490219e66d33f3a1dce8db97dc251d4:43:23)</div>
+    at Object.&lt;anonymous&gt; (http://localhost:9876/base/src/tests/wordpressdata.spec.js?0ce800e77ea922d1cdadb1da2aef4371a28bf126:107:23)</div>
     </div>
   </div>
   
